@@ -1,61 +1,64 @@
 body {
-    font-family: 'Inter', sans-serif; /* Usar la fuente Inter de Google Fonts */
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(to right, #6a11cb, #2575fc); /* Fondo degradado */
-    color: #ffffff; /* Color del texto */
-    line-height: 1.6; /* Espaciado entre líneas */
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  background-attachment: fixed;
+  color: #ffffff;
+  line-height: 1.6;
+  overflow-x: hidden;
 }
 
-
-/* Estilo para el contenedor principal */
-.container {
-    max-width: 1200px; /* Ancho máximo del contenedor */
-    margin: 0 auto; /* Centrar el contenedor */
-    padding: 20px; /* Espaciado interno */
-    text-align: center; /* Alinear texto al centro */
+/* Fondo decorativo */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('background.svg'); /* Cambia por la ruta correcta */
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.05;
+  z-index: -1;
 }
 
+/* Transiciones para entrada suave */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease forwards;
+}
+.fade-in:nth-child(2) { animation-delay: 0.2s; }
+.fade-in:nth-child(3) { animation-delay: 0.4s; }
+.fade-in:nth-child(4) { animation-delay: 0.6s; }
 
-/* Estilo para los encabezados */
-h1, h2, h3 {
-    margin: 20px 0; /* Margen superior e inferior */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra en el texto */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-
-/* Estilo para los párrafos */
-p {
-    margin: 10px 0; /* Margen superior e inferior */
-    font-size: 1.1em; /* Tamaño de fuente */
+/* Navbar básica */
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
-/* Estilo para los enlaces */
-a {
-    color: #ffdd57; /* Color de los enlaces */
-    text-decoration: none; /* Sin subrayado */
-    transition: color 0.3s; /* Transición suave para el color */
+.navbar a {
+  color: #ffdd57;
+  text-decoration: none;
+  font-weight: 600;
 }
 
-
-a:hover {
-    color: #ffffff; /* Color al pasar el ratón */
-}
-
-
-/* Estilo para botones */
-.button {
-    display: inline-block; /* Mostrar como bloque en línea */
-    padding: 10px 20px; /* Espaciado interno */
-    background-color: #ff4081; /* Color de fondo del botón */
-    color: #ffffff; /* Color del texto del botón */
-    border: none; /* Sin borde */
-    border-radius: 5px; /* Bordes redondeados */
-    cursor: pointer; /* Cambiar cursor al pasar el ratón */
-    transition: background-color 0.3s; /* Transición suave para el fondo */
-}
-
-
-.button:hover {
-    background-color: #e91e63; /* Color de fondo al pasar el ratón */
+.navbar a:hover {
+  color: #ffffff;
 }
