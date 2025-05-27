@@ -1,0 +1,40 @@
+<style>
+[touch-action="none"]{ -ms-touch-action: none; touch-action: none; }
+[touch-action="auto"]{ -ms-touch-action: auto; touch-action: auto; }
+[touch-action="pan-x"]{ -ms-touch-action: pan-x; touch-action: pan-x; }
+[touch-action="pan-y"]{ -ms-touch-action: pan-y; touch-action: pan-y; }
+[touch-action="pan-x pan-y"],[touch-action="pan-y pan-x"]{ -ms-touch-action: pan-x pan-y; touch-action: pan-x pan-y; }
+</style>
+<style type="text/css">.CSSTG-group {position:relative;display:block;}
+.CSSTG-child {backface-visibility:hidden;filter:blur(1);}
+.CSSTG-wrappedChild {padding:0.1px;margin:-0.1px;}
+</style>
+<style type="text/css">.CSSTG-ExpandCollapse-expand {overflow:hidden;transition:max-height .2s ease-in-out, opacity .24s ease .08s;}
+.CSSTG-ExpandCollapse-collapse {overflow:hidden;transition:max-height .2s ease-in-out, opacity .16s ease;}
+</style>
+<style type="text/css">.CSSTG-Dissolve-dissolve {overflow:hidden;transition:opacity .33s ease, min-height .33s ease, max-height .33s ease;}
+.CSSTG-Dissolve-leave {overflow:hidden;position:absolute;top:0;left:0;right:0;bottom:0;}
+.CSSTG-Dissolve-dissolve.CSSTG-Dissolve-async {transition:opacity .33s ease .66s, min-height .33s ease .33s, max-height .33s ease .33s;}
+.CSSTG-Dissolve-leave.CSSTG-Dissolve-async {transition:opacity .33s ease;}
+</style>
+<style type="text/css">.CSSTG-Slide-group {overflow:hidden;}
+.CSSTG-Slide-slide {overflow:hidden;transition:transform .26s ease, min-height .26s ease, max-height .26s ease;}
+.CSSTG-Slide-leave {overflow:hidden;position:absolute;top:0;left:0;right:0;bottom:0;}
+</style>
+<style type="text/css">.CSSTG-Reorderable-enter {transition:opacity .3s ease .2s;}
+.CSSTG-Reorderable-leave {position:absolute !important;top:0;left:0;transition:opacity .3s ease;}
+.CSSTG-Reorderable-move {transition:transform .36s ease;z-index:1;}
+.CSSTG-Reorderable-leave ~ .CSSTG-Reorderable-move {transition-delay:.2s;}
+</style>
+<style type="text/css">.CSSTG-SlideVariableWidth-group {overflow:hidden;transition:width .4s cubic-bezier(0.645, 0.045, 0.355, 1);}
+.CSSTG-SlideVariableWidth-slide {overflow:hidden;transition:transform .4s cubic-bezier(0.645, 0.045, 0.355, 1), min-height .4s cubic-bezier(0.645, 0.045, 0.355, 1), max-height .4s cubic-bezier(0.645, 0.045, 0.355, 1), opacity .4s cubic-bezier(0.645, 0.045, 0.355, 1);display:inline-block;}
+.CSSTG-SlideVariableWidth-leave {overflow:hidden;position:absolute;top:0;left:0;}
+.CSSTG-SlideVariableWidth-right {position:absolute;top:0;right:0;}
+</style>
+<style type="text/css">.CSSTG-FadeWithSlide-enter {transition:transform .4s cubic-bezier(0.66, 0, 0.34, 1.00), opacity .4s cubic-bezier(0.40, 0, 0.68, 0.06);}
+.CSSTG-FadeWithSlide-leave {transition:transform .4s cubic-bezier(0.66, 0, 0.34, 1.00), opacity .4s cubic-bezier(0.32, 0.94, 0.60, 1.00);pointer-events:none;}
+</style>
+<style type="text/css">.CSSTG-ColorSwatch-enter {transition:transform 0.2s ease-in-out;}
+.CSSTG-ColorSwatch-leave {position:absolute !important;top:0;left:0;transition:transform 0.2s ease-in-out;}
+.CSSTG-ColorSwatch-move {transition:transform 0.2s ease;z-index:1;}
+</style>
