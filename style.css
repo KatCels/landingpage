@@ -6,8 +6,7 @@ body {
     color: #ffffff; /* Color del texto */
     line-height: 1.6; /* Espaciado entre líneas */
 }
-&nbsp;
-&nbsp;
+
 
 /* Estilo para el contenedor principal */
 .container {
@@ -16,24 +15,20 @@ body {
     padding: 20px; /* Espaciado interno */
     text-align: center; /* Alinear texto al centro */
 }
-&nbsp;
-&nbsp;
+
 
 /* Estilo para los encabezados */
 h1, h2, h3 {
     margin: 20px 0; /* Margen superior e inferior */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra en el texto */
 }
-&nbsp;
-&nbsp;
+
 
 /* Estilo para los párrafos */
 p {
     margin: 10px 0; /* Margen superior e inferior */
     font-size: 1.1em; /* Tamaño de fuente */
 }
-&nbsp;
-&nbsp;
 
 /* Estilo para los enlaces */
 a {
@@ -41,14 +36,12 @@ a {
     text-decoration: none; /* Sin subrayado */
     transition: color 0.3s; /* Transición suave para el color */
 }
-&nbsp;
-&nbsp;
+
 
 a:hover {
     color: #ffffff; /* Color al pasar el ratón */
 }
-&nbsp;
-&nbsp;
+
 
 /* Estilo para botones */
 .button {
@@ -61,8 +54,7 @@ a:hover {
     cursor: pointer; /* Cambiar cursor al pasar el ratón */
     transition: background-color 0.3s; /* Transición suave para el fondo */
 }
-&nbsp;
-&nbsp;
+
 
 .button:hover {
     background-color: #e91e63; /* Color de fondo al pasar el ratón */
