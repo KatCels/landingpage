@@ -190,11 +190,6 @@ body::before {
 
 /* Sección Experiencia y Educación */
 
-.gif-derecha {
-  float: right;
-  margin-left: 10px; /* espacio entre el gif y el contenido a la izquierda */
-}
-
 
 
 .seccion-info {
@@ -226,6 +221,13 @@ body::before {
   opacity: 0;
   transform: translateY(20px);
 }
+
+
+.gif-derecha {
+  float: right;
+  margin-left: 10px;
+}
+
 
 /* Sección Habilidades */
 .habilidades {
