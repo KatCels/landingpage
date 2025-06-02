@@ -1,28 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Portfolio profesional de Kat, ingeniera de software.">
   <title>Kat | Portfolio</title>
 
-  <!-- Favicon -->
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
-
-  <!-- Google Fonts: Inter -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-
-  <!-- Estilos -->
-  <link rel="stylesheet" href="styles.css">
-
-  <!-- JavaScript -->
-  <script defer src="scripts.js"></script>
+  <script src="https://kit.fontawesome.com/a2e0f1ad03.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
   <div class="wrapper">
     <nav class="navbar">
-      <!-- Aquí va tu navegación -->
       <a href="#inicio">Inicio</a>
       <a href="#sobre">Sobre mí</a>
       <a href="#proyectos">Proyectos</a>
@@ -30,13 +21,58 @@
 
     <header class="hero" id="inicio">
       <div class="container">
-        <h1 class="fade-in">Bienvenido a Mi Portfolio</h1>
+        <h1 class="fade-in"><i class="fas fa-terminal"></i> Bienvenido a Mi Portfolio</h1>
         <h2 class="fade-in">Un lugar para aprender y explorar</h2>
-        <p class="fade-in">Esta es una página de ejemplo que utiliza CSS para crear un diseño atractivo y moderno.</p>
-        <p class="fade-in">¡Explora y disfruta de la experiencia!</p>
-        <a href="#proyectos" class="button">Comenzar</a>
+        <p class="fade-in">Explora los proyectos que reflejan mi trayectoria como ingeniera de software.</p>
+        <a href="#proyectos" class="button">Ver Proyectos</a>
       </div>
     </header>
+
+    <section id="proyectos" class="proyectos">
+      <h2>Proyectos Destacados</h2>
+      <div class="cards">
+        <div class="card fade-in">
+          <h3>Landing Page</h3>
+          <p>Diseño de una landing page responsive con HTML, CSS y JS.</p>
+        </div>
+        <div class="card fade-in">
+          <h3>Chatbot simple</h3>
+          <p>Desarrollado con Python y plataformas como Dialogflow.</p>
+        </div>
+        <div class="card fade-in">
+          <h3>Blog personal</h3>
+          <p>Un blog propio para compartir conocimientos y experiencias.</p>
+        </div>
+        <div class="card fade-in">
+          <h3>Aplicación móvil</h3>
+          <p>App para geolocalizar mascotas o planificar compras.</p>
+        </div>
+        <div class="card fade-in">
+          <h3>Portfolio</h3>
+          <p>Este mismo portfolio como ejemplo práctico de diseño y desarrollo web.</p>
+        </div>
+        <div class="card fade-in">
+          <h3>SAAS</h3>
+          <p>Aplicación web escalable basada en la nube.</p>
+        </div>
+        <div class="card fade-in">
+          <h3>Plataforma LMS</h3>
+          <p>Educación interactiva con seguimiento del alumno.</p>
+        </div>
+        <div class="card fade-in">
+          <h3>Sistema de reservas</h3>
+          <p>Gestión de citas y reservas para negocios.</p>
+        </div>
+        <div class="card fade-in">
+          <h3>Software con IA</h3>
+          <p>Procesamiento de texto e imagen usando inteligencia artificial.</p>
+        </div>
+        <div class="card fade-in">
+          <h3>Plataforma colaborativa</h3>
+          <p>Gestión de proyectos en equipo con tareas y mensajería.</p>
+        </div>
+      </div>
+    </section>
   </div>
 </body>
 </html>
