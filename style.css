@@ -189,6 +189,14 @@ body::before {
 }
 
 /* Sección Experiencia y Educación */
+
+.gif-derecha {
+  float: right;
+  margin-left: 10px; /* espacio entre el gif y el contenido a la izquierda */
+}
+
+
+
 .seccion-info {
   padding: 4rem 2rem;
   background-color: #f9f9f9;
