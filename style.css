@@ -6,6 +6,37 @@
   --font-main: 'Proxima Nova', sans-serif;
 }
 
+.slider-header {
+  width: 100%;
+  overflow: hidden;
+  height: 394px; /* altura igual a tus imágenes */
+  position: relative;
+}
+
+.slider {
+  display: flex;
+  width: calc(700px * 6); /* 3 imágenes x 2 (duplicadas para bucle) */
+  animation: deslizar 15s linear infinite;
+}
+
+.slider img {
+  width: 700px;
+  height: 394px;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+
+/* Animación del slider */
+@keyframes deslizar {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-2100px); /* 3 imágenes x 700px */
+  }
+}
+
+
 body {
   font-family: var(--font-main);
   margin: 0;
