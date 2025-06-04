@@ -6,34 +6,68 @@
   --font-main: 'Proxima Nova', sans-serif;
 }
 
-.slider-header {
-  width: 100%;
-  overflow: hidden;
-  height: 394px; /* altura igual a tus imágenes */
+.hero-header {
   position: relative;
-}
-
-.slider {
+  height: 400px;
+  overflow: hidden;
   display: flex;
-  width: calc(700px * 6); /* 3 imágenes x 2 (duplicadas para bucle) */
-  animation: deslizar 15s linear infinite;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
 }
 
-.slider img {
-  width: 700px;
-  height: 394px;
-  flex-shrink: 0;
-  object-fit: cover;
+/* Fondo animado detrás */
+.background-animado {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364, #0f2027);
+  background-size: 400% 400%;
+  animation: moverFondo 15s ease infinite;
+  z-index: 1;
+  opacity: 0.6; /* transparencia para que no opaque el contenido */
+  filter: blur(2px);
 }
 
-/* Animación del slider */
-@keyframes deslizar {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-2100px); /* 3 imágenes x 700px */
-  }
+/* Contenido por encima */
+.contenido-header {
+  position: relative;
+  z-index: 2;
+}
+
+.contenido-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.contenido-header p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.contenido-header button {
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #00bfff;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contenido-header button:hover {
+  background-color: #009acd;
+}
+
+/* Animación del fondo */
+@keyframes moverFondo {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 
