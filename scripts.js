@@ -1,3 +1,4 @@
+
 // Scroll suave para anclas internas
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
@@ -40,3 +41,5 @@ document.addEventListener("mousemove", (e) => {
   document.body.appendChild(particle);
   setTimeout(() => particle.remove(), 500);
 });
+
+
